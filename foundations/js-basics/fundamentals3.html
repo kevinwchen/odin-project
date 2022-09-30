@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+    let add7 = num => num + 7;
+
+    let multiply = (num1, num2) => num1 * num2;
+
+    function capitalise(inputString) {
+      if (typeof(inputString) != 'string') {
+        return undefined;
+      } else {
+        return inputString.charAt(0).toUpperCase() + inputString.slice(1).toLowerCase();
+      }
+    }
+
+    function lastLetter(inputString) {
+      if (typeof(inputString) != 'string') {
+        return undefined;
+      } else {
+        return inputString.charAt(inputString.length - 1);
+      }
+    }
+    
+  </script>
+</body>
+</html>
