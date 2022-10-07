@@ -1,2 +1,2 @@
-# odin-project
-Welcome to my project!
+# The Odin Project Exercises
+Miscellaneous exercises from The Odin Project.
