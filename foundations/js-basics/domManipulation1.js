@@ -1,4 +1,4 @@
-// your JavaScript file
+// Adding DOM elements
 const container = document.querySelector('#container');
 
 const content = document.createElement('div');
@@ -28,3 +28,37 @@ content3.appendChild(content5);
 
 
 container.appendChild(content3);
+
+// Events
+// Method 2
+const btn2 = document.querySelector('#btn2');
+btn2.onclick = () => alert("Hello World");
+
+// Method 3
+const btn3 = document.querySelector('#btn3');
+btn3.addEventListener('click', () => {
+  alert("Hello World");
+});
+
+btn.addEventListener('click', function (e) {
+  console.log(e);
+});
+
+btn.addEventListener('click', function (e) {
+  console.log(e.target);
+});
+
+btn.addEventListener('click', function (e) {
+  e.target.style.background = 'blue';
+});
+
+const buttons = document.querySelectorAll('button');
+
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+
+  // and for each one we add a 'click' listener
+  button.addEventListener('click', () => {
+    alert(button.id);
+  });
+});
